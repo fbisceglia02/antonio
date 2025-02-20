@@ -11,13 +11,15 @@ import { LampadineComponent } from './lampadine/lampadine.component';
 import { LampadinaComponent } from './lampadina/lampadina.component';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PokemonlistComponent,
     NavbarComponent,
     LampadineComponent,
-    LampadinaComponent
+    LampadinaComponent,
+    
   ],
   imports: [
     BrowserModule,
