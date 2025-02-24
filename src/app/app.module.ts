@@ -12,6 +12,7 @@ import { LampadinaComponent } from './lampadina/lampadina.component';
 import { FormsModule } from '@angular/forms';
 import { MonitorComponent } from './monitor/monitor.component';
 import { TelecomandoComponent } from './telecomando/telecomando.component';
+import { TelefonoComponent } from './telefono/telefono.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TelecomandoComponent } from './telecomando/telecomando.component';
     LampadinaComponent,
     MonitorComponent,
     TelecomandoComponent,
+    TelefonoComponent
     
   ],
   imports: [
