@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+
+.monitor {
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 10px;
+    border: 8px solid #555;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: #4e4e4e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.stand {
+    width: 80px;
+    height: 20px;
+    background-color: #555;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.base {
+    width: 120px;
+    height: 10px;
+    background-color: #777;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.screen-on {
+    width: 100%;
+    height: 100%;
+    background-image: url("s.jpg"); /* Verifica il percorso */
+    background-size: contain; /* Mostra l'immagine interamente */
+    background-repeat: no-repeat; /* Evita ripetizioni */
+    background-position: center; /* Centra l'immagine */
+    border-radius: 5px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.no-signal {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    animation: blink 1s infinite alternate;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 175px;
+    padding-left: 75px;
+
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.static-background {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#444 1%, transparent 1%) 0 0 / 5px 5px,
+                radial-gradient(#666 1%, transparent 1%) 2.5px 2.5px / 5px 5px;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}

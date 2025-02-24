@@ -1,0 +1,16 @@
+<div class="monitor">
+    <div  [ngClass]="on ? 'screen-on' : 'screen' " > 
+        <div class="static-background"></div>
+        <p class="no-signal">
+            {{on ? 'NO SIGNAL' : ''}}
+        </p>
+    </div>
+    <div class="stand">Philips</div>
+    <div class="base"></div>
+</div>
+
+
+<div style="text-align: center;">
+    <p><mat-slide-toggle [(ngModel)]="on" (change)="accendiMonitor($event)">{{on ? 'spegni' : 'accendi'}}</mat-slide-toggle></p>
+    
+</div>

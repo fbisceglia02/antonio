@@ -10,6 +10,7 @@ import { NavbarComponent } from './structures/navbar/navbar.component';
 import { LampadineComponent } from './lampadine/lampadine.component';
 import { LampadinaComponent } from './lampadina/lampadina.component';
 import { FormsModule } from '@angular/forms';
+import { MonitorComponent } from './monitor/monitor.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     LampadineComponent,
     LampadinaComponent,
+    MonitorComponent,
     
   ],
   imports: [
