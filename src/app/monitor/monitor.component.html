@@ -14,3 +14,5 @@
     <p><mat-slide-toggle [(ngModel)]="on" (change)="accendiMonitor($event)">{{on ? 'spegni' : 'accendi'}}</mat-slide-toggle></p>
     
 </div>
+
+<app-telecomando (sendSignal)="getRemoteSignal($event)" [on]="on"></app-telecomando>

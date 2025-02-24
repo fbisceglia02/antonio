@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .telecomando {
+    width: 220px;
+    height: 500px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    background-color: #555;
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #777;
+  }
+  
+  .btn:active {
+    background-color: #444;
+  }
+  
+  section .btn:focus {
+    outline: none;
+  }
+  
+  
