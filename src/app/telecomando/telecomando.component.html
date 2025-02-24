@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecomando</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="telecomando">
+
+    <div class="section">
+      <button class="btn" id="accendi-spegni" (click)="accendi()">🔛</button>
+    </div>
+    
+
+    <div class="section">
+      <button class="btn" id="numero-1">1</button>
+      <button class="btn" id="numero-2">2</button>
+      <button class="btn" id="numero-3">3</button>
+      <button class="btn" id="numero-4">4</button> <!-- Aggiunto tasto 4 -->
+    </div>
+    
+
+    <div class="section">
+      <button class="btn" id="luminosita-aumenta">+☀️</button>
+      <button class="btn" id="luminosita-diminuisci">-☀️</button>
+      <button class="btn" id="mute">🔇</button>
+    </div>
+    
+    <!-- Tasti aggiuntivi -->
+    <div class="section">
+      <button class="btn" id="cambia-canale">Cambia Canale</button>
+      <button class="btn" id="info">ℹ️</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("accendi-spegni").addEventListener("click", function() {
+      alert("Accensione o spegnimento!");
+    });
+
+    document.getElementById("luminosita-aumenta").addEventListener("click", function() {
+      alert("Luminosità aumentata!");
+    });
+
+    document.getElementById("luminosita-diminuisci").addEventListener("click", function() {
+      alert("Luminosità diminuita!");
+    });
+
+    document.getElementById("mute").addEventListener("click", function() {
+      alert("Audio disattivato!");
+    });
+
+    document.getElementById("cambia-canale").addEventListener("click", function() {
+      alert("Canale cambiato!");
+    });
+
+    document.getElementById("info").addEventListener("click", function() {
+      alert("Visualizzazione informazioni.");
+    });
+  </script>
+</body>
+</html>

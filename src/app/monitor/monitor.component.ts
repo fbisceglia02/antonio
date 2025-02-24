@@ -14,4 +14,9 @@ export class MonitorComponent {
       this.on=evt.checked;
       console.log(this.on, evt);
     }
+
+    getRemoteSignal(evt: any){
+      this.on = evt;
+
+    }
 }
