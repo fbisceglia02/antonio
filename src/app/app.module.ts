@@ -11,6 +11,7 @@ import { LampadineComponent } from './lampadine/lampadine.component';
 import { LampadinaComponent } from './lampadina/lampadina.component';
 import { FormsModule } from '@angular/forms';
 import { MonitorComponent } from './monitor/monitor.component';
+import { TelefonoComponent } from './telefono/telefono.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { MonitorComponent } from './monitor/monitor.component';
     LampadineComponent,
     LampadinaComponent,
     MonitorComponent,
+    TelefonoComponent,
     
   ],
   imports: [

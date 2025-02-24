@@ -1,0 +1,10 @@
+<div class="iphone">
+    <div class="dynamic-island"></div>
+    <div [ngClass]="on ? 'screen-on' : 'screen'"> 
+        <div class="static-background"></div>
+        <p class="no-signal">{{ on ? 'iFone' : '' }}</p>
+    </div>
+</div>
+<div class="slider">
+    <p><mat-slide-toggle [(ngModel)]="on" (change)="accendiifone($event)">{{ on ? 'spegni' : 'accendi' }}</mat-slide-toggle></p>
+</div>
