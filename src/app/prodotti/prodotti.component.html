@@ -1,0 +1,28 @@
+<div *ngIf="isLoading"><p>isLoading</p></div>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Numero prodotto</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Modello</th>
+        <th scope="col">Prezzo</th>
+        <th scope="col">Disponibile</th>
+        <th scope="col">Non in magazzino</th>
+        <th scope="col">Pezzi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">1</th>
+        <td>{{product.brand}}</td>
+        <td>{{product.model}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.available}}</td>
+        <td>{{product.outofstock}}</td>
+        <td>{{product.stockQuantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProductsService } from '../services/products.service';
+import { Product } from '../interfaces/product_interface';
 
 @Component({
   selector: 'app-monitor',
@@ -6,8 +8,9 @@ import { Component } from '@angular/core';
   templateUrl: './monitor.component.html',
   styleUrl: './monitor.component.css'
 })
-export class MonitorComponent {
+export class MonitorComponent implements OnInit {
     on: boolean = false;
+
     mute: boolean = false;
     uno: boolean = false;
 
