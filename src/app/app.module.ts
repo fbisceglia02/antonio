@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { MonitorComponent } from './monitor/monitor.component';
 import { TelecomandoComponent } from './telecomando/telecomando.component';
 import { TelefonoComponent } from './telefono/telefono.component';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { ProdottiComponent } from './prodotti/prodotti.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { TelefonoComponent } from './telefono/telefono.component';
     LampadinaComponent,
     MonitorComponent,
     TelecomandoComponent,
-    TelefonoComponent
+    TelefonoComponent,
+    ProdottiComponent
     
   ],
   imports: [
@@ -34,7 +37,8 @@ import { TelefonoComponent } from './telefono/telefono.component';
     FormsModule,
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })
