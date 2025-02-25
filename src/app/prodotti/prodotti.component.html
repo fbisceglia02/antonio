@@ -1,6 +1,31 @@
-<div *ngIf="isLoading"><p>isLoading</p></div>
+<div  style="text-align: center;"    *ngIf="isLoading"><p>Loading</p></div>
+
+<div class="centro">
+<mat-card *ngFor="let product of products; let i=index" class="example-card" appearance="outlined" (click)="naviga(product)">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{product.brand}}</mat-card-title>
+      <mat-card-subtitle>{{product.model}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://media.bytecno.it/mageplaza/blog/post/c/o/come-girare-lo-schermo-del-pc.png">
+    <mat-card-content>
+      <p>
+        <mat-card-subtitle>Prezzo: {{product.price}}€</mat-card-subtitle>
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="carrello(product)">Aggiungi al carrello</button>
+      <button mat-button (click)="acquista(product)">Acquista ora</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
 
 
+
+
+
+
+<!-- 
 <table class="table">
     <thead>
       <tr>
@@ -25,4 +50,4 @@
       </tr>
     </tbody>
   </table>
-
+ -->

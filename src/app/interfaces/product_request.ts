@@ -1,5 +1,4 @@
-export interface Product {
-    id:number;
+export interface ProductRequest {
     brand:string;
     model:string;
     price:number;

@@ -9,6 +9,9 @@ import { Product } from '../interfaces/product_interface';
   styleUrl: './monitor.component.css'
 })
 export class MonitorComponent implements OnInit {
+    ngOnInit(): void {
+      throw new Error('Method not implemented.');
+    }
     on: boolean = false;
 
     mute: boolean = false;

@@ -1,0 +1,18 @@
+.example-card {
+    max-width: 200px;
+    height: 310px;
+    margin-right: 55px;
+    text-align: center;
+  }
+  
+  .example-header-image {
+    background-image: url('ferrux_conserves.ico');
+    background-size: cover;
+  }
+  
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}

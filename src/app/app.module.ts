@@ -13,8 +13,13 @@ import { FormsModule } from '@angular/forms';
 import { MonitorComponent } from './monitor/monitor.component';
 import { TelecomandoComponent } from './telecomando/telecomando.component';
 import { TelefonoComponent } from './telefono/telefono.component';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { ProdottiComponent } from './prodotti/prodotti.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 
 
 @NgModule({
@@ -27,7 +32,8 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     MonitorComponent,
     TelecomandoComponent,
     TelefonoComponent,
-    ProdottiComponent
+    ProdottiComponent,
+    ProductDetailComponent,
     
   ],
   imports: [
@@ -35,6 +41,10 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     AppRoutingModule,
     MatSlideToggleModule,
     FormsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule
+
   ],
   providers: [
     provideAnimationsAsync(),
