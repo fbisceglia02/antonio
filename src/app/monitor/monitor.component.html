@@ -4,6 +4,14 @@
         <p class="no-signal">
             {{on ? 'NO SIGNAL' : ''}}
         </p>
+        <p 
+        *ngIf="on && mute">
+            <span>🔇</span>
+        </p>
+
+        <div [ngClass]="on ? 'screen-1' : 'screen'"> 
+            <div class="screen-1"></div>
+        </div>
     </div>
     <div class="stand">Philips</div>
     <div class="base"></div>
@@ -15,4 +23,4 @@
     
 </div>
 
-<app-telecomando (sendSignal)="getRemoteSignal($event)" [on]="on"></app-telecomando>
+<app-telecomando (sendSignal)="getRemoteSignal($event)" [on]="on"  (sendMute)="getMute($event)" (sendUno)="getUno($event)"></app-telecomando>

@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 })
 export class MonitorComponent {
     on: boolean = false;
-
+    mute: boolean = false;
+    uno: boolean = false;
 
     accendiMonitor(evt: any){
       this.on=evt.checked;
@@ -18,5 +19,11 @@ export class MonitorComponent {
     getRemoteSignal(evt: any){
       this.on = evt;
 
+    }
+    getMute(evt: boolean){
+      this.mute=evt;
+    }
+    getUno(evt: boolean){
+      this.uno = evt;
     }
 }
