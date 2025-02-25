@@ -10,31 +10,9 @@ import { Product } from '../interfaces/product_interface';
 })
 export class MonitorComponent implements OnInit {
     on: boolean = false;
-    products: Product[] = [];
 
-constructor(private productsService: ProductsService) {
-
-}
-ngOnInit(): void {
-  // this.fetchProducts();
-}
-
-// fetchProducts() {
-//   this.productsService.fetchAllProducts().subscribe({
-
-//     next: (products: Product[]) => {
-//         this.products = products;
-//         console.log(this.products);
-//     },
-
-//     error: (error: any) => {
-//       console.log(error);
-//     }
-
-
-
-//   });
-// }
+    mute: boolean = false;
+    uno: boolean = false;
 
     accendiMonitor(evt: any){
       this.on=evt.checked;
@@ -44,5 +22,11 @@ ngOnInit(): void {
     getRemoteSignal(evt: any){
       this.on = evt;
 
+    }
+    getMute(evt: boolean){
+      this.mute=evt;
+    }
+    getUno(evt: boolean){
+      this.uno = evt;
     }
 }
